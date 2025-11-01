@@ -5,7 +5,7 @@ meta {
 }
 
 get {
-  url: https://api.hetzner.cloud/v1/images?sort=name:desc&type=system&architecture=x86
+  url: https://api.hetzner.cloud/v1/images?sort=name:desc&type=system&architecture=x86&page=1
   body: none
   auth: inherit
 }
@@ -14,10 +14,7 @@ params:query {
   sort: name:desc
   type: system
   architecture: x86
-}
-
-headers {
-  Authorization: Bearer {{API_TOKEN}}
+  page: 1
 }
 
 settings {
