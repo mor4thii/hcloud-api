@@ -5,9 +5,15 @@ meta {
 }
 
 get {
-  url: https://api.hetzner.cloud/v1/images
+  url: https://api.hetzner.cloud/v1/images?sort=name:desc&type=system&architecture=x86
   body: none
   auth: inherit
+}
+
+params:query {
+  sort: name:desc
+  type: system
+  architecture: x86
 }
 
 headers {
