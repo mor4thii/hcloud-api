@@ -1,0 +1,21 @@
+meta {
+  name: List Data Centers
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.hetzner.cloud/v1/datacenters?page=1&sort=name:asc
+  body: none
+  auth: inherit
+}
+
+params:query {
+  page: 1
+  sort: name:asc
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}
