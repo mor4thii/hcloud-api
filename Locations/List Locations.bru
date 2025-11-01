@@ -1,0 +1,20 @@
+meta {
+  name: List Locations
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.hetzner.cloud/v1/locations
+  body: none
+  auth: inherit
+}
+
+headers {
+  sort: name:asc
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}
