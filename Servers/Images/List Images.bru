@@ -1,0 +1,20 @@
+meta {
+  name: List Images
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.hetzner.cloud/v1/images
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer {{API_TOKEN}}
+}
+
+settings {
+  encodeUrl: false
+  timeout: 0
+}
